@@ -3,7 +3,7 @@ package leslie.com.designpatterns.proxy;
 import android.util.Log;
 
 /**
- * 真实对象，追求者
+ * 真实对象，被代理的对象
  * Created by Leslie on 2018/9/2.
  */
 

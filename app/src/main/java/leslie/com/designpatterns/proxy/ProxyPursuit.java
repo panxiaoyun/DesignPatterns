@@ -3,7 +3,7 @@ package leslie.com.designpatterns.proxy;
 import android.util.Log;
 
 /**
- * 静态代理
+ * 静态代理对象
  * Created by Leslie on 2018/9/2.
  */
 
