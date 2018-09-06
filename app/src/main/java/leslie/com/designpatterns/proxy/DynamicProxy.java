@@ -39,4 +39,17 @@ public class DynamicProxy implements InvocationHandler {
        }
        return method.invoke(mGiveGiftInterface,args);
     }
+
+    public static void main(String[] args){
+        SchoolGirl girl = new SchoolGirl();
+        girl.mName = "Dudu";
+        RealPursuit realPursuit = new RealPursuit(girl);
+        // 创建一个动态代理
+        DynamicProxy dynamicProxy = new DynamicProxy();
+        // 把真实追求者和动态代理关联起来
+        GiveGiftInterface giftInterface = dynamicProxy.getProxyInterface(realPursuit);
+        // 调用代理过的接口
+        giftInterface.giveFlower();
+        giftInterface.giveChocolate();
+    }
 }

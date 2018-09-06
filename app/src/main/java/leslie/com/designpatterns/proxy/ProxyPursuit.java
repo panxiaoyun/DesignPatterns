@@ -28,4 +28,12 @@ public class ProxyPursuit implements GiveGiftInterface {
     public void giveChocolate() {
         mRealPursuit.giveChocolate();
     }
+
+    public static void main(String[] args){
+        SchoolGirl girl = new SchoolGirl();
+        girl.mName = "leslie";
+        GiveGiftInterface giveGift = new ProxyPursuit(girl);
+        giveGift.giveChocolate();
+        giveGift.giveFlower();
+    }
 }
