@@ -1,5 +1,7 @@
 package leslie.com.designpatterns;
 
+import org.junit.Test;
+
 import leslie.com.designpatterns.proxy.DynamicProxy;
 import leslie.com.designpatterns.proxy.GiveGiftInterface;
 import leslie.com.designpatterns.proxy.OtProxyPursuit;
@@ -12,7 +14,7 @@ import leslie.com.designpatterns.proxy.SchoolGirl;
  */
 
 public class ProxyTest {
-
+    @Test
     public void test1(){
         SchoolGirl girl = new SchoolGirl();
         girl.mName = "leslie";
@@ -21,6 +23,7 @@ public class ProxyTest {
         giveGift.giveFlower();
     }
 
+    @Test
     public void test2(){
         SchoolGirl girl = new SchoolGirl();
         girl.mName = "Leo";
@@ -30,6 +33,7 @@ public class ProxyTest {
         giveGift.giveFlower();
     }
 
+    @Test
     public void testDynamic(){
         SchoolGirl girl = new SchoolGirl();
         girl.mName = "Dudu";
