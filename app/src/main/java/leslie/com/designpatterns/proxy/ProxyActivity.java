@@ -98,8 +98,8 @@ public class ProxyActivity extends AppCompatActivity implements View.OnClickList
         DetailComponent c = new DetailComponent();
         ComponentA a = new ComponentA(c);
         ComponentB b = new ComponentB(c);
+        a.giveFlower();
         b.giveFlower();
-        c.giveFlower();
 
     }
 
@@ -109,6 +109,5 @@ public class ProxyActivity extends AppCompatActivity implements View.OnClickList
         adapter.eat();
         adapter.drink();
     }
-
 
 }

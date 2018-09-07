@@ -11,6 +11,6 @@ public class DetailComponent extends Component {
     private static final String TAG = "DetailComponent";
     @Override
     public void giveFlower() {
-        Log.e(TAG,"detail give flower");
+        Log.i(TAG,"detail give flower");
     }
 }

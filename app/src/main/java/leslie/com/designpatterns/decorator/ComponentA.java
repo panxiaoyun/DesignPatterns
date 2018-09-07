@@ -15,6 +15,6 @@ public class ComponentA extends DecoratorComponent {
     @Override
     public void giveFlower() {
         super.giveFlower();
-        Log.e(TAG,"装饰A添加的功能");
+        Log.i(TAG,"装饰A添加的功能");
     }
 }
